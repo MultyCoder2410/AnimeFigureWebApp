@@ -1,4 +1,4 @@
-﻿@model IEnumerable<AnimeFigureWebApp.Models.AnimeFigure>
+﻿@model AnimeFigureModel
 
 @{
     ViewData["Title"] = "Catalog";
@@ -22,19 +22,17 @@
                     <p>Type</p>
                     <hr>
 
-                    <div>
+                    @foreach (AnimeFigureWebApp.Models.Type type in Model.Types)
+                    {
 
-                        <input type="checkbox" />
-                        <label>Scale figure</label>
+                        <div>
 
-                    </div>
+                            <input id="@type.TypeId" type="checkbox" />
+                            <label>@type.Name</label>
 
-                    <div>
+                        </div>
 
-                        <input type="checkbox" />
-                        <label>Figma</label>
-
-                    </div>
+                    }
 
                 </div>
 
@@ -79,22 +77,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Figures[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.Figures[0].Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.Figures[0].Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Value)
+                @Html.DisplayNameFor(model => model.Figures[0].Value)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Figures) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)

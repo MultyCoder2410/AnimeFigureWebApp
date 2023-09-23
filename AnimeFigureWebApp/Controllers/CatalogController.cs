@@ -22,8 +22,11 @@ namespace AnimeFigureWebApp.Controllers
         // GET: Catalog
         public async Task<IActionResult> Index()
         {
+
+            AnimeFigureModel figureModel = new AnimeFigureModel(_context.Figures.ToList(), _context.Types.ToList());
+
               return _context.Figures != null ? 
-                          View(await _context.Figures.ToListAsync()) :
+                          View(figureModel) :
                           Problem("Entity set 'ApplicationDbContext.Figures'  is null.");
         }
 
