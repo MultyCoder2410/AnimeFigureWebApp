@@ -4,6 +4,7 @@ public record AnimeFigureModel
 (
 
     IList<AnimeFigure> Figures,
-    IList<Type> Types
+    IList<Type> Types,
+    IList<Brand> Brands
     
 );

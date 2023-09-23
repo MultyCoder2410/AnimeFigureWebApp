@@ -41,19 +41,17 @@
                     <p>Brand</p>
                     <hr>
 
-                    <div>
+                    @foreach (Brand brand in Model.Brands)
+                    {
 
-                        <input type="checkbox" />
-                        <label>Good Smiles Company</label>
+                        <div>
 
-                    </div>
+                            <input id="@brand.BrandId" type="checkbox" />
+                            <label>@brand.Name</label>
 
-                    <div>
+                        </div>
 
-                        <input type="checkbox" />
-                        <label>Banpresto</label>
-
-                    </div>
+                    }
 
                 </div>
 

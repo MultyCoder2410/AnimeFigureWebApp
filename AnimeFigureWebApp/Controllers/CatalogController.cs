@@ -23,7 +23,7 @@ namespace AnimeFigureWebApp.Controllers
         public async Task<IActionResult> Index()
         {
 
-            AnimeFigureModel figureModel = new AnimeFigureModel(_context.Figures.ToList(), _context.Types.ToList());
+            AnimeFigureModel figureModel = new AnimeFigureModel(_context.Figures.ToList(), _context.Types.ToList(), _context.Brands.ToList());
 
               return _context.Figures != null ? 
                           View(figureModel) :
