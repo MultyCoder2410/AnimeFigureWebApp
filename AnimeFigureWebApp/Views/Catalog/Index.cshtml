@@ -1,14 +1,80 @@
 ﻿@model IEnumerable<AnimeFigureWebApp.Models.AnimeFigure>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Catalog";
 }
 
-<h1>Index</h1>
+<link rel="stylesheet" href="~/css/MainCatalog.css" asp-append-version="true" />
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="SearchBar">
+
+    <input type="text" placeholder="Search">
+
+    <div class="FilterDropdown">
+
+        <input type="button" class="DropdownButton" value="Filter">
+        <div class="DropdownContent">
+
+            <div class="DropdownSubContent">
+
+                <div id="Type">
+
+                    <p>Type</p>
+                    <hr>
+
+                    <div>
+
+                        <input type="checkbox" />
+                        <label>Scale figure</label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="checkbox" />
+                        <label>Figma</label>
+
+                    </div>
+
+                </div>
+
+                <div id="Brand">
+
+                    <p>Brand</p>
+                    <hr>
+
+                    <div>
+
+                        <input type="checkbox" />
+                        <label>Good Smiles Company</label>
+
+                    </div>
+
+                    <div>
+
+                        <input type="checkbox" />
+                        <label>Banpresto</label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="VerticalDiv">
+
+        <a asp-action="Create">
+            <input type="button" value="Add figure">
+        </a>
+
+    </div>
+
+</div>
+
 <table class="table">
     <thead>
         <tr>

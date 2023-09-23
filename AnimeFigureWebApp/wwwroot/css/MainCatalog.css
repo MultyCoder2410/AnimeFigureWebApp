@@ -1,0 +1,99 @@
+body
+{
+
+    width: 100%;
+
+}
+
+.SearchBar
+{
+
+    position: relative;
+    background-color: #EEEEEE;
+    width: 100%;
+    left: 0%;
+    height: 60px;
+    padding-top: 15px;
+    padding-left: 1%;
+
+}
+
+input[type=text]
+{
+
+    width: 80%;
+
+}
+
+.FilterDropdown
+{
+
+    position: relative;
+    display: inline-block;
+
+}
+
+.DropdownContent
+{
+
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    z-index: 1;
+    margin: 0;
+
+}
+
+.DropdownContent p
+{
+
+    margin: 0;
+    margin-left: 5px;
+
+}
+
+.FilterDropdown:hover .DropdownContent
+{
+    
+    display: block;
+    width: 500px;
+    right: 0%;
+
+}
+
+.FilterDropdown .DropdownSubContent
+{
+
+    display: flex;
+
+}
+
+.FilterDropdown hr
+{
+
+    margin: 0;
+
+}
+
+.FilterDropdown #Brand 
+{
+
+    margin-left: 20px;
+
+}
+
+.VerticalDiv
+{
+
+    display: inline-block;
+    border-left: 2px solid #AAAAAA;
+
+}
+
+.VerticalDiv input
+{
+
+    margin-left: 5px;
+
+}

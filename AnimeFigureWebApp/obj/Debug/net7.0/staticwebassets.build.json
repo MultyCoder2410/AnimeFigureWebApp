@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HcodnNozhtjZATcyaQLeFxVP4gIXG20aG/m5K8aC+tQ=",
+  "Hash": "DIDgcNs0GA6Q9LP0pjBj1aL72j+si+SLe46fQG9cZZQ=",
   "Source": "AnimeFigureWebApp",
   "BasePath": "_content/AnimeFigureWebApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AnimeFigureWebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\MainCatalog.css",
+      "SourceId": "AnimeFigureWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\",
+      "BasePath": "_content/AnimeFigureWebApp",
+      "RelativePath": "css/MainCatalog.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MainCatalog.css"
     },
     {
       "Identity": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\site.css",
