@@ -16,12 +16,52 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Tristan Franssen\Desktop\Private\Programming\Projects\Local\AnimeFigureWebApp\AnimeFigureWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Catalog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Catalog/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Catalog/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Catalog/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Catalog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/MyCollections/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb2xsZWN0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/MyCollections/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb2xsZWN0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/MyCollections/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb2xsZWN0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/MyCollections/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb2xsZWN0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/MyCollections/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlDb2xsZWN0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Tristan Franssen/Desktop/Private/Programming/Projects/Local/AnimeFigureWebApp/AnimeFigureWebApp/Views/Shared/Error.cshtml]
