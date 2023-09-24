@@ -76,7 +76,7 @@ input[type=text]
 
 }
 
-.FilterDropdown #Brand 
+.FilterDropdown .DropDownCategory 
 {
 
     margin-left: 20px;

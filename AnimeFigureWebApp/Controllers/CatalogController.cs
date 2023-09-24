@@ -20,12 +20,31 @@ namespace AnimeFigureWebApp.Controllers
         }
 
         // GET: Catalog
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchTerm, string[] brands)
         {
 
-            AnimeFigureModel figureModel = new AnimeFigureModel(_context.Figures.ToList(), _context.Types.ToList(), _context.Brands.ToList());
+            IQueryable<AnimeFigure>? figures = _context?.Figures;
+            if (figures != null)
+            {
 
-              return _context.Figures != null ? 
+                if (!string.IsNullOrEmpty(searchTerm))
+                    figures = figures.Where(f => f.Name != null && f.Name.Contains(searchTerm));
+
+                if (brands != null && brands.Length > 0)
+                    figures = figures.Where(f => f.Brand != null && brands.Contains(f.Brand.BrandId.ToString()));
+
+            }
+
+            AnimeFigureModel figureModel = new AnimeFigureModel(
+                
+                figures?.ToList() ?? new List<AnimeFigure>(), 
+                _context?.Types.ToList() ?? new List<AnimeFigureWebApp.Models.Type>(),
+                _context?.Brands.ToList() ?? new List<Brand>(),
+                _context?.Origins.ToList() ?? new List<Origin>()
+                
+            );
+
+            return _context?.Figures != null ? 
                           View(figureModel) :
                           Problem("Entity set 'ApplicationDbContext.Figures'  is null.");
         }

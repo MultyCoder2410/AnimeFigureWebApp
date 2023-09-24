@@ -5,10 +5,11 @@
 }
 
 <link rel="stylesheet" href="~/css/MainCatalog.css" asp-append-version="true" />
+<script href="js/site.js"></script>
 
 <div class="SearchBar">
 
-    <input type="text" placeholder="Search">
+    <input type="text" id="SearchbarInput" name="MainSearchbar" placeholder="Search">
 
     <div class="FilterDropdown">
 
@@ -17,7 +18,7 @@
 
             <div class="DropdownSubContent">
 
-                <div id="Type">
+                <div class="DropDownCategory" id="Type">
 
                     <p>Type</p>
                     <hr>
@@ -36,7 +37,7 @@
 
                 </div>
 
-                <div id="Brand">
+                <div class="DropDownCategory" id="Brand">
 
                     <p>Brand</p>
                     <hr>
@@ -46,8 +47,27 @@
 
                         <div>
 
-                            <input id="@brand.BrandId" type="checkbox" />
+                            <input id="@brand.BrandId" type="checkbox"/>
                             <label>@brand.Name</label>
+
+                        </div>
+
+                    }
+
+                </div>
+
+                <div class="DropDownCategory" id="Origin">
+
+                    <p>Origin</p>
+                    <hr>
+
+                    @foreach (Origin origin in Model.Origins)
+                    {
+
+                        <div>
+
+                            <input id="@origin.OriginId" type="checkbox" />
+                            <label>@origin.Name</label>
 
                         </div>
 
