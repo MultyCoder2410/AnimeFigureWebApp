@@ -1,11 +1,9 @@
 ﻿@model AnimeFigureModel
-
 @{
     ViewData["Title"] = "Catalog";
 }
 
 <link rel="stylesheet" href="~/css/MainCatalog.css" asp-append-version="true" />
-<script href="js/site.js"></script>
 
 <div class="SearchBar">
 
@@ -14,6 +12,7 @@
     <div class="FilterDropdown">
 
         <input type="button" class="DropdownButton" value="Filter">
+
         <div class="DropdownContent">
 
             <div class="DropdownSubContent">
@@ -21,6 +20,7 @@
                 <div class="DropDownCategory" id="Type">
 
                     <p>Type</p>
+
                     <hr>
 
                     @foreach (AnimeFigureWebApp.Models.Type type in Model.Types)
@@ -40,6 +40,7 @@
                 <div class="DropDownCategory" id="Brand">
 
                     <p>Brand</p>
+
                     <hr>
 
                     @foreach (Brand brand in Model.Brands)
@@ -59,6 +60,7 @@
                 <div class="DropDownCategory" id="Origin">
 
                     <p>Origin</p>
+
                     <hr>
 
                     @foreach (Origin origin in Model.Origins)
@@ -92,44 +94,67 @@
 </div>
 
 <table class="table">
+
     <thead>
+
         <tr>
+
             <th>
                 @Html.DisplayNameFor(model => model.Figures[0].Name)
             </th>
+            
             <th>
-                @Html.DisplayNameFor(model => model.Figures[0].Description)
+                Type name
             </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Figures[0].Price)
             </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Figures[0].Value)
             </th>
+            
             <th></th>
+
         </tr>
+
     </thead>
+
     <tbody>
-@foreach (var item in Model.Figures) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Value)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.AnimeFigureId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.AnimeFigureId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.AnimeFigureId">Delete</a>
-            </td>
-        </tr>
-}
+
+        @foreach (var item in Model.Figures) 
+        {
+
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Type.Name)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Value)
+                </td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.AnimeFigureId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.AnimeFigureId">Delete</a>
+                </td>
+
+            </tr>
+
+        }
+
     </tbody>
+
 </table>
+
+<script src="~/js/site.js"></script>

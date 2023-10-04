@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\AnimeFigureWebApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\CreateCatalog.css",
+      "PackagePath": "staticwebassets\\css\\CreateCatalog.css"
+    },
+    {
+      "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\DetailsCollection.css",
+      "PackagePath": "staticwebassets\\css\\DetailsCollection.css"
+    },
+    {
       "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\MainCatalog.css",
       "PackagePath": "staticwebassets\\css\\MainCatalog.css"
+    },
+    {
+      "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
       "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\css\\site.css",
@@ -15,6 +27,10 @@
     {
       "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\js\\CreateFigure.js",
+      "PackagePath": "staticwebassets\\js\\CreateFigure.js"
     },
     {
       "Id": "C:\\Users\\Tristan Franssen\\Desktop\\Private\\Programming\\Projects\\Local\\AnimeFigureWebApp\\AnimeFigureWebApp\\wwwroot\\js\\site.js",

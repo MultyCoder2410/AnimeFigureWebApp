@@ -1,42 +1,53 @@
 ﻿@model AnimeFigureWebApp.Models.Collection
-
 @{
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<link rel="stylesheet" href="~/css/DetailsCollection.css" asp-append-version="true" />
+
+<div class="CollectionData">
+
+    <h2>@Model.Name</h2>
+    <p>Owner: @Model.Collectors?.Where(c => c.CollectorId == Model.OwnerId)</p>
+
+    <div class="Values">
+
+        <p>Diffrence: €@Model.CalculateDiffrence()</p>
+        <p>Total Price: €@Model.TotalPrice</p>
+        <p>Total Value: €@Model.TotalValue</p>
+
+    </div>
+
+</div>
 
 <div>
-    <h4>Collection</h4>
+    
     <hr />
+
     <dl class="row">
+    
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.OwnerId)
         </dt>
+        
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.OwnerId)
         </dd>
+        
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
+        
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TotalValue)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TotalValue)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TotalPrice)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TotalPrice)
-        </dd>
+
     </dl>
+
 </div>
+
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.CollectionId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+
+    <a asp-action="Index"><input type="button" value="Back" class="btn btn-primary" /></a>
+
 </div>

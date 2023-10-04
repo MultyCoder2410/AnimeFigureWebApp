@@ -56,7 +56,7 @@ namespace AnimeFigureWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CollectionId,OwnerId,Name,TotalValue,TotalPrice")] Collection collection)
+        public async Task<IActionResult> Create([Bind("CollectionId,OwnerId,Name")] Collection collection)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace AnimeFigureWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CollectionId,OwnerId,Name,TotalValue,TotalPrice")] Collection collection)
+        public async Task<IActionResult> Edit(int id, [Bind("CollectionId,OwnerId,Name")] Collection collection)
         {
             if (id != collection.CollectionId)
             {
