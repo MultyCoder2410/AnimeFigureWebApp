@@ -13,18 +13,18 @@ document.getElementById("originSelect").onchange = function (e)
 
         document.getElementById("Choosen").removeChild(this);
         selectedOrigins.splice(selectedOrigins.indexOf(this.textContent), 1)
+        UpdateSelectedOrigins();
 
     }
+
     if (!document.getElementById(this.selectedIndex) && this.selectedIndex > 0)
     {
-        console.log("Test");
 
         document.getElementById("Choosen").appendChild(newElement);
         selectedOrigins.push(newElement.textContent);
+        UpdateSelectedOrigins();
 
     }
-
-    UpdateSelectedOrigins();
 
 }
 

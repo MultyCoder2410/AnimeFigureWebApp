@@ -29,17 +29,6 @@ namespace AnimeFigureWebApp.Controllers
         }
 
         /// <summary>
-        /// Shows Privacy page
-        /// </summary>
-        /// <returns>View</returns>
-        public IActionResult Privacy()
-        {
-
-            return View();
-
-        }
-
-        /// <summary>
         /// Gives back error view.
         /// </summary>
         /// <returns>View with ErrorViewModel</returns>

@@ -22,6 +22,15 @@ body
 
 }
 
+.SearchBar [type=button]
+{
+
+    margin-top: -9%;
+
+    font-size: 0.9em;
+
+}
+
 input[type=text]
 {
 
